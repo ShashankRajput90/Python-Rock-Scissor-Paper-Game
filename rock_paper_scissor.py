@@ -5,13 +5,13 @@ print("===================")
 print("1) ✊")
 print("2) ✋")
 print("3) ✌️")
-int(input("Pick a number:"))
-int_pc = random.randint(1,3)
+user_choice = (input("Pick a number:"))
+pc_choice = random.randint(1,3)
 
 #for printing computer emoji
-if int_pc == 1:
+if pc_choice == 1:
     print("You picked ✊")
-elif int_pc == 2:
+elif pc_choice == 2:
     print("You picked ✋")
 else:
     print("You picked ✌️")
@@ -25,13 +25,13 @@ else:
     print("CPU picked ✌️")
 
 # for winning conditions
-if int == int_pc:
+if int == pc_choice:
     print("It's a tie")
-elif int == 1 and int_pc == 3:
+elif int == 1 and pc_choice == 3:
     print("You win")
-elif int == 2 and int_pc == 1:
+elif int == 2 and pc_choice == 1:
     print("You win")
-elif int == 3 and int_pc == 2:
+elif int == 3 and pc_chioce == 2:
     print("You win")
 else:
     print("You lose")
