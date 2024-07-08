@@ -17,22 +17,28 @@ else:
     print("You picked ✌️")
 
 # for printing user emoji
-if int == 1:
+if user_choice == 1:
     print("CPU picked ✊")
-elif int == 2:
+elif user_choice == 2:
     print("CPU picked ✋")
 else:
     print("CPU picked ✌️")
 
-# for winning conditions
-if int == pc_choice:
+# for winning conditions of user
+if user_choice == pc_choice:
     print("It's a tie")
-elif int == 1 and pc_choice == 3:
+elif user_choice == 1 and pc_choice == 3:
     print("You win")
-elif int == 2 and pc_choice == 1:
+elif user_choice == 2 and pc_choice == 1:
     print("You win")
-elif int == 3 and pc_chioce == 2:
+elif user_choice == 3 and pc_chioce == 2:
     print("You win")
+elif user_choice == 3 and pc_choice == 1:
+    print("Computer win")
+elif user_choice == 1 and pc_choice == 2:
+    print("Computer win")
+elif user_choice == 2 and pc_chioce == 3:
+    print("Computer win")
 else:
     print("You lose")
 print("===================")
